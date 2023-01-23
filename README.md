@@ -26,8 +26,8 @@ A weather map application that allows users to get a 5-day forecast, current tem
 - Only a five day forecast is currently available
 
 ## API References
-OpenWeather: used to display the 5-day forecast, temperture, and humidty of any specified location
+- OpenWeather: used to display the 5-day forecast, temperture, and humidty of any specified location
 https://openweathermap.org/api/one-call-api#parameter
-Mapbox: used to display the map and marker of any specified location
+- Mapbox: used to display the map and marker of any specified location
 https://docs.mapbox.com/mapbox-gl-js/api/
 
