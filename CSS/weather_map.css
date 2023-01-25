@@ -1,67 +1,86 @@
+
 body{
-    background-color: #f3f3f3;
+    /*background-color: #f3f3f3;*/
+    /*background-color: #F9E9D3;*/
+    background-color: #daf4f6;
 }
 #weatherHeader{
-    background-color: #8f8f90;
+    /*background-color: #8f8f90;*/
+    /*margin: 10px;*/
     position: relative;
     height:100%;
-    text-align: center;
+    /*text-align: center;*/
+    color: white;
+    font-family: "Merriweather", serif;
+}
+#weatherDashboard{
+    margin:10px;
+}
+#colorModeBtn{
     color:white;
+    width:100px;
+    height:70%;
+    margin:10px;
 }
 #mapBackground{
-    background-color: #cb8990;
     border-radius: 30px;
     box-shadow: 2px 2px 4px black;
-    border: 5px solid #65334D;
+    margin:20px;
 }
 #searchBar{
-    background-color: #8f8f90;
     text-align: center;
     color: white;
     margin-top:10px;
+    margin-bottom:10px;
     border-radius: 30px;
+    font-family: "Montserrat", sans-serif;
 }
 #address-input{
     margin-top: 10px;
 }
 #search-btn{
-    background-color: rgba(220, 142, 150, 0.91);
+    /*background-color: rgba(220, 142, 150, 0.91);*/
     box-shadow: 1px 1px 2px black;
     color: white;
 ;
 }
 #map{
     width:100%;
-    height: 500px;
+    height: 650px;
     position:relative;
     z-index: 2;
-    margin-top:20px;
     margin-bottom:5px;
     border-radius: 30px;
 }
 #insertCurrent{
-    margin:10px;
+    margin:20px;
     padding:10px;
-    background-color: rgba(203, 119, 130, 0.82);
+    /*background-color: rgba(203, 119, 130, 0.82);*/
     color: white;
     display:flex;
     box-shadow: 2px 2px 4px black;
     border-radius: 30px;
-    border: 5px solid #65334D;
+    /*border: 10px solid  #03A5B7;*/
+    /*border: 5px solid #65334D;*/
 }
+
 #insertIcon{
-    background-color: rgba(203, 119, 130, 0.82);
+    /*background-color: rgba(203, 119, 130, 0.82);*/
+    /*border: 10px solid  #03A5B7;*/
+
     border-radius: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin:10px;
+    margin:20px;
     box-shadow: 2px 2px 4px black;
-    border: 5px solid #65334D;
+    /*border: 5px solid #65334D;*/
+    text-align: center;
 }
 #mainIcon{
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
+    margin:0 0 10px 0;
 }
 #currentCard{
     align-items: center;
@@ -69,7 +88,7 @@ body{
     margin:10px;
     padding:10px;
 }
-#currentWeather{
+.currentWeather{
     color:white;
     align-items: center;
     text-align: center;
@@ -83,50 +102,121 @@ body{
     margin:5px;
 }
 #insertWeatherContainer{
-    background-color: #8f8f90;
-    margin-top: 20px;
+    /*background-color: #8f8f90;*/
+    border-radius: 30px;
+    /*border: 10px solid #80CFD1;*/
+    margin:15px;
+    box-shadow: 2px 2px 4px black;
 }
-#dateTimeCards{
-    margin:5px;
-    padding: 5px;
-    /*border: 5px solid #2f746d;*/
-    /*background-color: rgba(139, 201, 193, 0.37);*/
-    background-color: #cb8990;
+#forecastHeader{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top:5px;
+}
+.dtCards{
+    margin:5px 5px 10px 5px;
+    padding: 20px 5px 5px 5px;
+    width:20%;
     box-shadow: 2px 2px 4px black;
     border-radius: 30px;
     color: white;
     text-align: center;
-    border: 5px solid #65334D;
 }
 .coordinates {
-    background: rgba(203, 119, 130, 0.79);
+    /*background: rgba(203, 119, 130, 0.79);*/
+    background-color: #e06848;
     color: #fff;
     position: absolute;
-    bottom:50px;
-    left: 50px;
+    bottom:40px;
+    left: 20px;
     padding: 5px 10px;
     margin: 0;
     font-size: 11px;
+    font-family: "Montserrat", sans-serif;
     display: none;
     z-index:5;
+    border-radius: 20px;
+}
+/*day mode*/
+.dayModeBackground{
+    background-color: #daf4f6;
+}
+.dayModeHeader{
+    background-color: #03A5B7;
+}
+.dayModeMapBackground{
+    background-color: #80CFD1;
+}
+.dayModeSearchBar{
+    background-color: #03A5B7;
+}
+.dayModeSearchBtn{
+    background-color: #80CFD1
+}
+.dayModeCurrent{
+    background-color: #80CFD1;
+}
+.dayModeIcon{
+    background-color:#80CFD1;
+}
+.dayModeWeatherContainer{
+    background-color: #03A5B7;
+}
+.dayModeDtCards{
+    background-color: #80CFD1;
+
+    margin:5px 5px 10px 5px;
+    padding: 20px 5px 5px 5px;
+    width:20%;
+    box-shadow: 2px 2px 4px black;
+    border-radius: 30px;
+    color: white;
+    text-align: center;
 }
 
-/*#footer {*/
-/*    background-color: rgba(47, 116, 109, 0.92);*/
-/*    color:white;*/
-/*    position: fixed;*/
-/*    bottom: 0;*/
-/*    width: 100%;*/
-/*    height: 2rem;*/
-/*    display: flex;*/
-/*    justify-content:center;*/
-/*    align-items: center;*/
-/*    padding-top:10px;*/
-/*    z-index: 10;*/
-/*}*/
-b{
-    font-family: "Ubuntu", sans-serif;
+/*night mode*/
+.nightModeBackground{
+    background-color: #dad1ee;
+}
+.nightModeHeader{
+    background-color:#3D348B;
+}
+.nightModeMapBackground{
+    background-color:#BC96E6;
+}
+.nightModeSearchBar{
+    background-color: #3D348B;
+}
+.nightModeSearchBtn{
+    background-color: #BC96E6;
+}
+.nightModeCurrent{
+    background-color:#BC96E6;
+}
+.nightModeIcon{
+    background-color:#BC96E6;
+}
+.nightModeWeatherContainer{
+    background-color: #3D348B;
+}
+.nightModeDtCards{
+    background-color:#BC96E6;
+    margin:5px 5px 10px 5px;
+    padding: 20px 5px 5px 5px;
+    width:20%;
+    box-shadow: 2px 2px 4px black;
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+}
+
+
+/*fonts*/
+h2,h3{
+    font-family: "Merriweather", serif;
 }
 p{
-    font-family: "Nanum Gothic", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }

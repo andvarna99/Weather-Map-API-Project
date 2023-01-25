@@ -10,7 +10,9 @@
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&display=swap" rel="stylesheet">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/a88297ca40.js" crossorigin="anonymous"></script>
     <!--Custom CSS-->
     <link rel="stylesheet" href="CSS/weather_map.css">
 </head>
@@ -19,18 +21,19 @@
 
             <!--sidebar-->
 <!--            <nav id="sidebarMenu" class="m-0 collapse d-lg-block sidebar collapse bg-white">-->
-                        <div class="row text-light">
-                            <h1 id="weatherHeader" >Weather</h1>
+                        <div id="weatherHeader" class="dayModeHeader row text-light d-flex justify-content-between">
+                            <h1 id="weatherDashboard" class="col-6">Weather Dashboard</h1>
+                            <button id="colorModeBtn" type="button" class="btn col-6 align-items-center"><i class="fa-regular fa-star fs-1"></i></button>
                         </div>
 <!--            </nav>-->
 
-            <div class="row w-100 mt-3 d-flex justify-content-around">
-                <div id="mapBackground" class="col-7">
+            <div class="row container-fluid w-100 mt-3 d-flex justify-content-around">
+                <div id="mapBackground" class="col-lg-7 dayModeMapBackground">
                     <!--searchbar-->
-                    <div id="searchBar" class="container-fluid form-group">
+                    <div id="searchBar" class="dayModeSearchBar container-fluid form-group">
                         <label for="address-input" class="form-label">Enter a place:</label>
                         <input id="address-input" class="form-label" type="text">
-                        <button id="search-btn" type="button" class="form-label">Search and Move</button>
+                        <button id="search-btn" type="button" class="form-label dayModeSearchBtn">Search and Move</button>
                     </div>
 
                     <!--mapbox map-->
@@ -43,29 +46,24 @@
                 </div>
 
                 <!--current forecast-->
-
-                <div class="col-4">
-                    <div class="row">
-                        <div id="insertCurrent"></div>
+                <div class="col-lg-4">
+                    <div class="row container-fluid">
+                        <div id="insertCurrent" class="dayModeCurrent"></div>
                     </div>
-                    <div class="row">
+                    <div class="row container-fluid">
 <!--                        <img id="thermometer" src="img/thermometer-icon.png">-->
-                        <div id="insertIcon"></div>
+                        <div id="insertIcon" class="dayModeIcon"></div>
                     </div>
                 </div>
             </div>
+
             <!--5-day weather forecast-->
-            <div class="row">
-                <div id="insertWeatherContainer">
-                    <h3 id="forecastHeader" class="d-none">5 Day Forecast</h3>
-                    <div id="insertWeather"></div>
+            <div class="row container-fluid">
+                <div id="insertWeatherContainer" class="d-none dayModeWeatherContainer">
+                    <h2 id="forecastHeader" class="d-none">Looking Forward</h2>
+                    <div id="insertWeather" class="d-flex justify-content-around"></div>
                 </div>
             </div>
-            <!--footer-->
-<!--            <div id="footer" class="text-center">-->
-<!--                <p>Copyright ©2023</p>-->
-<!--            </div>-->
-
         </div>
 
 
