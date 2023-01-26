@@ -174,4 +174,6 @@ function nightMode(){
     for(var i = 0; i<dtCards.length; i++){
         dtCards[i].classList.toggle("nightModeDtCards");
     }
+    let colorModeBtn = document.getElementById("colorModeBtn");
+    colorModeBtn.classList.toggle("nightModeBtn");
 }

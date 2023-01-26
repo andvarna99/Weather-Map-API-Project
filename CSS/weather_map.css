@@ -146,6 +146,9 @@ body{
 .dayModeHeader{
     background-color: #03A5B7;
 }
+.dayModeBtn{
+    background-color: #80CFD1;
+}
 .dayModeMapBackground{
     background-color: #80CFD1;
 }
@@ -182,6 +185,9 @@ body{
 }
 .nightModeHeader{
     background-color:#3D348B;
+}
+.nightModeBtn{
+    background-color:#BC96E6;
 }
 .nightModeMapBackground{
     background-color:#BC96E6;
