@@ -1,4 +1,4 @@
-# Weather-Map-API-Project
+# Weather-Dashboard
 A weather map application that allows users to get a 5-day forecast and current temperature for a specified location pinned on the map
 
 ## Features
